@@ -79,6 +79,7 @@ service web {
    dotnet run -- Samples/demo.roz
 Опційно можна вказати шлях до вихідного файлу:
    dotnet run -- Samples/demo.roz out.json
+   
 Варіант 2: через Visual Studio (F5)
 1) У профілі запуску `Roz.Cli` задай Command line arguments, наприклад:
    Samples\demo.roz
