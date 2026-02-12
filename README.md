@@ -50,7 +50,7 @@ service web {
   replicas 1
   port 8081:80
 }
-
+```
 
 Правила (v1)
 - Файл складається з блоків `service`
