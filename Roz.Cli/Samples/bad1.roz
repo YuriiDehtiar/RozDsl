@@ -1,0 +1,11 @@
+﻿service api {
+  image "my-api:1.0"
+  replicas 0
+  port 8080:80
+}
+
+service web {
+  image "nginx:latest"
+  replicas 1
+  port 8081:80
+}

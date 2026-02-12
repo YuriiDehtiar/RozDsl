@@ -1,0 +1,26 @@
+{
+  "services": [
+    {
+      "name": "api",
+      "image": "my-api:1.0",
+      "replicas": 2,
+      "ports": [
+        {
+          "host": 8080,
+          "container": 80
+        }
+      ]
+    },
+    {
+      "name": "web",
+      "image": "nginx:latest",
+      "replicas": 1,
+      "ports": [
+        {
+          "host": 8081,
+          "container": 80
+        }
+      ]
+    }
+  ]
+}

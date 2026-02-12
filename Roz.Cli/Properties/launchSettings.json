@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Roz.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\python_project\\RozDsl\\Roz.Cli\\Samples\\bad1.roz"
+    }
+  }
+}
