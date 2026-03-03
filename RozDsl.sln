@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roz.Language", "Roz.Languag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roz.Cli", "Roz.Cli\Roz.Cli.csproj", "{0527B7F2-EBA2-407B-9834-56F79D7C3EA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RozDsl.Vsix", "RozDsl.Vsix\RozDsl.Vsix.csproj", "{00C6B354-CEF8-4BE5-964B-9E188925AB8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0527B7F2-EBA2-407B-9834-56F79D7C3EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0527B7F2-EBA2-407B-9834-56F79D7C3EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0527B7F2-EBA2-407B-9834-56F79D7C3EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C6B354-CEF8-4BE5-964B-9E188925AB8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C6B354-CEF8-4BE5-964B-9E188925AB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C6B354-CEF8-4BE5-964B-9E188925AB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C6B354-CEF8-4BE5-964B-9E188925AB8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

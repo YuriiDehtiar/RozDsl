@@ -1,0 +1,78 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Roz DSL",
+  "scopeName": "source.roz",
+  "fileTypes": [ "roz", ".roz" ],
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#serviceDecl" },
+    { "include": "#keywords" },
+    { "include": "#numbers" },
+    { "include": "#braces" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.roz",
+          "match": "#.*$"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.roz",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.roz",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "serviceDecl": {
+      "patterns": [
+        {
+          "match": "\\b(service)\\s+([A-Za-z_][\\w-]*)",
+          "captures": {
+            "1": { "name": "keyword.control.roz" },
+            "2": { "name": "entity.name.type.roz" }
+          }
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.roz",
+          "match": "\\b(service|image|replicas|port)\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.roz",
+          "match": "\\b\\d+(\\s*:\\s*\\d+)?\\b"
+        }
+      ]
+    },
+    "braces": {
+      "patterns": [
+        {
+          "name": "punctuation.section.block.begin.roz",
+          "match": "\\{"
+        },
+        {
+          "name": "punctuation.section.block.end.roz",
+          "match": "\\}"
+        }
+      ]
+    }
+  }
+}
