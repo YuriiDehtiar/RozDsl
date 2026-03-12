@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="RozDsl.Vsix.2b5070de-5f62-455b-b23c-189b1741e898" Version="1.0.1" Language="en-US" Publisher="dyvnau" />
+        <Identity Id="RozDsl.Vsix.2b5070de-5f62-455b-b23c-189b1741e898" Version="1.0.2" Language="en-US" Publisher="dyvnau" />
         <DisplayName>RozDsl.Vsix</DisplayName>
         <Description>Empty VSIX Project.</Description>
     </Metadata>

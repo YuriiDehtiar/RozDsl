@@ -1,2 +1,5 @@
 ﻿[$RootKey$\TextMate\Repositories]
 "RozDsl"="$PackageFolder$\Grammars"
+
+[$RootKey$\TextMate\LanguageConfiguration\GrammarMapping]
+"source.roz"="$PackageFolder$\roz-language-configuration.json"

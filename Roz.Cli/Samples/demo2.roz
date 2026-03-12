@@ -1,6 +1,4 @@
-# demo
-service web {
-  image "nginx:latest"
-  replicas 2
-  port 8080:80
+# service web {
+	""
+
 }
