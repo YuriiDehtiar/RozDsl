@@ -1,0 +1,5 @@
+service web {
+  image "nginx:latest"
+  replicas 0
+  port 8080:80
+}

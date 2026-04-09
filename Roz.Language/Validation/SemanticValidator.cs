@@ -72,7 +72,7 @@ internal sealed class SemanticValidator
             diagnostics.Report(
                 "ROZ203",
                 $"У сервісі '{svc.Name}' значення 'replicas' має бути > 0 (зараз: {svc.Replicas.Value}).",
-                NoSpan);
+                svc.ReplicasSpan);
         }
 
         // ports — кожен порт у діапазоні 1..65535

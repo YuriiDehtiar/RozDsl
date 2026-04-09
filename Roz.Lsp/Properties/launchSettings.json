@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Roz.Lsp": {
+      "commandName": "Project",
+      "commandLineArgs": "--selftest"
+    }
+  }
+}

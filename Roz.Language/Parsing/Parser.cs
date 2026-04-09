@@ -125,6 +125,7 @@ internal sealed class Parser
                 else
                 {
                     svc.Replicas = ParseIntOrReport(numTok, "ROZ130", "Некоректне значення 'replicas'. Очікувалось ціле число.");
+                    svc.ReplicasSpan = numTok.Span;
                     seenReplicas = true;
                 }
 

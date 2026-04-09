@@ -1,6 +1,7 @@
 ﻿// Roz.Language/Ast/ServiceDecl.cs
 using System;
 using System.Collections.Generic;
+using Roz.Language.Diagnostics;
 
 namespace Roz.Language.Ast;
 
@@ -17,6 +18,7 @@ public sealed class ServiceDecl
 
         Name = name;
         Ports = new List<PortMapping>();
+        ReplicasSpan = new TextSpan(0, 0);
     }
 
     /// <summary>Назва сервісу (ідентифікатор після 'service').</summary>
@@ -27,6 +29,9 @@ public sealed class ServiceDecl
 
     /// <summary>Кількість екземплярів (число після 'replicas'). Може бути null, доки не заповнить парсер/валідація.</summary>
     public int? Replicas { get; set; }
+
+    /// <summary>Точний span числа після 'replicas'. Потрібен для semantic diagnostics у LSP.</summary>
+    public TextSpan ReplicasSpan { get; set; }
 
     /// <summary>Список портів (кожен 'port host:container').</summary>
     public List<PortMapping> Ports { get; }
